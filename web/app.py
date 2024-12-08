@@ -35,8 +35,8 @@ def get_valid_sequence(df, start_index, diff, recurrence):
 st.title('Data Processing with ROLL Sequences')
 
 # Get difference and recurrence from user
-difference = st.number_input('Enter the maximum allowed difference between consecutive numbers:', min_value=1, value=4)
-recurrence = st.number_input('Enter the minimum length of a valid sequence:', min_value=1, value=9)
+difference = st.number_input('enter min. difference between roll number:', min_value=1, value=4)
+recurrence = st.number_input('Enter minimum set to be grouped :', min_value=1, value=9)
 
 # Specify file path to the CSV file in the 'data' folder
 file_path = os.path.join('data', 'data.csv')
